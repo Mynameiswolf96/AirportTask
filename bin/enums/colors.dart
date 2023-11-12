@@ -1,3 +1,7 @@
-enum MyColors{
-  black,white,red,blue;
+enum MyColors {
+  black,
+  white,
+  red,
+  blue,
+  ;
 }

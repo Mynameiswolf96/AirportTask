@@ -1,15 +1,25 @@
 import 'Plane.dart';
 
 class PassengerAirplane extends Plane {
-  final int _capacity;
+  final int capacity;
 
-  PassengerAirplane(super._id, super._model, super._speed, super._colors,
-      super._fuelConsumption, this._capacity);
-
-  int get capacity => _capacity;
+  const PassengerAirplane.passengerAirplane(
+    super.id,
+    super.model,
+    super.speed,
+    super.colors,
+    super.fuelConsumption,
+    this.capacity,
+  );
 
   @override
   String toString() {
-    return '${super.toString()} Capacity: $_capacity';
+    return '${super.toString()} Capacity: $capacity';
   }
+
+  @override
+  int getLiftingCapacity() => 0;
+
+  @override
+  int getPassengerCapacity() => capacity;
 }
