@@ -3,7 +3,7 @@ import 'package:airport/airport.dart' as airport;
 import '../airplanes/plane.dart';
 
 class Airport {
-  List<Plane> planes;
+  final List<Plane> planes;
   static Airport? _instance;
 
   Airport._(this.planes);
@@ -36,15 +36,14 @@ class Airport {
     return copyListOfPlanes;
   }
 
-  List<Plane> sortedPlanesBySpeedAndModel() {
+  List<Plane> sortPlanesBySpeedAndModel() {
     List<Plane> copyListOfPlanes = List.from(planes);
     copyListOfPlanes.sort((a, b) {
       int speedComparison = a.speed.compareTo(b.speed);
       if (speedComparison != 0) {
         return speedComparison;
-      } else {
-        return a.model.compareTo(b.model);
       }
+      return a.model.compareTo(b.model);
     });
 
     return copyListOfPlanes;

@@ -3,3 +3,4 @@ abstract interface class FunctionalForAirplanes {
 
   int getLiftingCapacity();
 }
+

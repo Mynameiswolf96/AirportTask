@@ -8,7 +8,8 @@ void main() {
       'Общее количество пассажиров в самолётах ${airport.getTotalPassenger()}');
   print('Общая грузоподъемность в самолётах ${airport.getTotalCapacity()}');
   print('Общая информация о самолётах ${airport.planes}');
-  print('Самолёты отсортированы по скорости${airport.sortedPlanesBySpeedAndModel()})');
+  print(
+      'Самолёты отсортированы по скорости${airport.sortPlanesBySpeedAndModel})');
   int minEdge = int.parse(stdin.readLineSync() ?? '0');
   int maxEdge = int.parse(stdin.readLineSync() ?? '0');
   print(
