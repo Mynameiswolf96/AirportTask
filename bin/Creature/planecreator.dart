@@ -1,4 +1,4 @@
-import '../airplanes/Plane.dart';
+import '../airplanes/plane.dart';
 import '../airplanes/cargoairplane.dart';
 import '../airplanes/passengerairplane.dart';
 import '../enums/colors.dart';
@@ -22,7 +22,6 @@ class PlaneCreator {
     CargoAirplane.cargoAirplane(
         '118', 'Super Guppy', 900, MyColors.black, 3000, 3500),
   ];
-  List<Plane> listOfPlane = List.from(_listOfPlanes);
 
-  List<Plane> fetchPlanes() => listOfPlane;
+  List<Plane> fetchPlanes() => List.from(_listOfPlanes);
 }

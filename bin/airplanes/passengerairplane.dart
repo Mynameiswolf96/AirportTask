@@ -1,4 +1,4 @@
-import 'Plane.dart';
+import 'plane.dart';
 
 class PassengerAirplane extends Plane {
   final int capacity;

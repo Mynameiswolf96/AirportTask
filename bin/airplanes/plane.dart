@@ -1,5 +1,5 @@
 import '../enums/colors.dart';
-import 'funcionalForAirplanes.dart';
+import 'funcionalforairplanes.dart';
 
 abstract class Plane implements FunctionalForAirplanes {
   final String id;
